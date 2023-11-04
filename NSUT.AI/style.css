@@ -1,0 +1,326 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+.navigation{
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    background-color: white;
+}
+
+.reachhome{
+    text-decoration: none;
+    color: #000000;
+}
+ 
+.navigationbar{
+    display:flex;
+    height: 80px;
+    align-items: center;
+    box-shadow: inset 20px 0px 20px #000000; 
+}
+
+.nsut-ai-logo{
+    height:80px;
+    width: 80px;      
+}
+
+.name{
+    margin-right: 1100px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.home-nav, .team-nav{
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+.home-nav::before , .team-nav::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color:rgb(164, 16, 52);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.home-nav:hover::before , .team-nav:hover::before{
+   width: 80%;
+}
+
+.home-nav:hover,.team-nav:hover{
+    color: rgb(164, 16, 52);
+}
+
+
+.navkey{
+    text-align: end;
+
+}
+
+.centercontent{
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    border-top: 1px solid white;
+    background-image: url("pattern.png"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 250px;
+    padding-left: 500px;
+    line-height:1.5;
+}
+
+.society-name{
+    font-size:60px;
+}
+
+.art{
+    color: red;  
+}
+
+.nsut{
+    font-size:30px;
+}
+
+.intel{
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 40px;
+    margin-top: 0px;
+    transform: translate(4%,32%);
+}
+
+.backed-by{
+    font-size: 20px;
+}
+
+.introduction{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    height: 300px;
+}
+
+.intro{
+    font-family:'Montserrat', sans-serif; 
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.nsut-ai-logo2{
+    height: 190px;
+    width: 200px;
+    margin-left:280px;
+}
+
+
+.nsut-ai{
+    color: red;
+    font-size: 20px;
+}
+
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(247, 247, 247);
+    height: 800px;
+}
+
+.heading{
+    margin-left: 50px;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.project1{
+    margin-right:50px ;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.arrow-img{
+    position: absolute;
+    z-index:1;
+    height:40px;
+    width:40px;
+     margin-left: 280px;
+     margin-top: 20px;
+     opacity: 0;
+     transform: opacity 0.3s;
+}
+
+.project1:hover .arrow-img{
+    opacity: 1;
+}
+
+.arrow1,.arrow2,.arrow3{
+    text-decoration: none;
+}
+
+.img1{
+    height: 250px;
+    width: 350px;
+}
+
+.news1,.news2,.news3{
+    font-family:'Montserrat', sans-serif; 
+    font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    min-height: 172.8px;
+    max-height: 172.8px;
+    transition: all 1s;    
+}
+
+.headline1,.headline2,.headline3{
+    font-family:'Montserrat', sans-serif; 
+    font-weight: 500;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 111px;
+    max-height: 111px;
+    transition: all 1s;
+}
+
+.para1,.para2,.para3{
+    border: 2px solid rgb(164, 16, 52); 
+    padding:0px 20px 20px 20px;
+    padding-top: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.project2{
+    margin-right:50px;
+    width: 350px;
+    margin-top: 115px;
+}
+
+.img2{
+    height: 250px;
+    width: 350px;
+}
+
+.project2:hover  .arrow-img{
+    opacity: 1;
+}
+
+.project3{ 
+    margin-right: 50px;
+    width:350px;
+    margin-top: 115px; 
+}
+
+.img3{
+    height: 250px;
+    width: 350px;
+}
+
+.project3:hover  .arrow-img{
+    opacity: 1;
+}
+
+.project1:hover,.project2:hover,.project3:hover{
+    overflow:visible;
+    white-space:normal;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+    filter: opacity(0.5);
+    transform: translateY(30px);
+    transition: all .3s ease-out;
+    background-blend-mode: lighten;
+    transform: scale(1.05);   
+}
+
+.footer1{
+    display: flex;
+    height: 175px;
+    align-items: start;
+    justify-content:space-between ;
+    font-family:'Montserrat', sans-serif;
+    background-color: rgb(164, 16, 52);
+    color: white;
+    padding-top:30px;
+    padding-left:40px;
+    padding-right: 40px;
+}
+
+.symbol-name{
+    margin-top: 0px;
+}
+
+.NSUT-ai-2{
+    transform: translate(-8%,+25%);
+}
+
+.home-team{
+    margin-top:0;
+    line-height: 2.25;
+    font-size: 20px;
+}
+
+.home-footer,.team-footer{
+    text-decoration: none;
+    color: white;
+}
+
+.ig{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.linkedin{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;   
+}
+
+.social{
+    display: flex;
+}
+
+.link-home{
+    text-decoration: none;
+    display: flex;
+    color: white;
+}
+
+
+
+
